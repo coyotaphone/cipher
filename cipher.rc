@@ -1,0 +1,32 @@
+#include <winres.h>
+
+#include "resource.h"
+
+VS_VERSION_INFO   VERSIONINFO
+FILEVERSION       VERSION
+PRODUCTVERSION    VERSION
+FILEFLAGSMASK     VS_FFI_FILEFLAGSMASK
+FILEFLAGS         0x00000000L
+FILEOS            VOS_NT_WINDOWS32
+FILETYPE          VFT_APP
+FILESUBTYPE       VFT2_UNKNOWN
+BEGIN
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", TRANSLATION
+  END
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK TRANSLATION_STR
+    BEGIN
+      VALUE "FileVersion",      VERSION_STR
+      VALUE "ProductVersion",   VERSION_STR
+      VALUE "LegalCopyright",   COPYRIGHT_STR
+      VALUE "CompanyName",      COPYRIGHT_STR
+      VALUE "OriginalFilename", FILENAME_STR
+      VALUE "InternalName",     FILENAME_STR
+      VALUE "FileDescription",  NAME_STR
+      VALUE "ProductName",      NAME_STR
+    END
+  END
+END
