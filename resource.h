@@ -8,3 +8,5 @@
 #define COPYRIGHT_STR     "coyotaphone"
 #define FILENAME_STR      "cipher.exe"
 #define NAME_STR          "Cipher"
+
+#define IDI_LOGO  1
