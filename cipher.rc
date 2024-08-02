@@ -30,3 +30,5 @@ BEGIN
     END
   END
 END
+
+IDI_LOGO  ICON  "logo.ico"
