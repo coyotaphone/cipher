@@ -9,7 +9,7 @@ INT WINAPI wWinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, 
   
   WNDCLASS wndClass {
     0U, WindowProc, 0, 0, hInstance,
-    LoadIcon(nullptr, IDI_APPLICATION),
+    LoadIcon(hInstance, MAKEINTRESOURCE(IDI_LOGO)),
     LoadCursor(nullptr, IDC_ARROW),
     CreateSolidBrush(RGB(192, 192, 192)),
     nullptr, TEXT(NAME_STR)
